@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/normalise.css" rel="stylesheet" />
+    <link href="/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <title>You Got Served!</title>
+  </head>
+  <body>
+    <h1>I Eats</h1>
+    <form id="create">
+      <label>Title: <input id="title"></input></label>
+      <label>Image URL: <input id="image-url"></input></label>
+      <label>Ingredients: <input id="ingredients-input"></input></label><button id="add-ingredient">+</button>
+      <ul id="ingredients-list"></ul>
+      <label>Instructions: <textarea id="instructions"></textarea></label>
+      <button type="submit">Create Recipe</button>
+    </form>
+    <button id="get-recipes">Grab Latest Meals! ↻</button>
+    <section id="recipes"></section>
+    <script src="/main.js"></script>
+  </body>
+</html>

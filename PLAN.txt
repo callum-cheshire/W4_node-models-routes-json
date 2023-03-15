@@ -1,0 +1,16 @@
+Examine existing code to find out what needs adding
+
+We need:
+  To build out each function in the recipes.js file in the models folder
+  To build an endpoint that uses each of those functions to perform the appropriate action
+  To use app.use in the app.js file to route the request into the routes folder and apply the appropriate method based on the endpoint 
+
+Build a get request in the recipes.js file in the routes folder
+  Use recipesRouter.get and then an asyncfunction with req, res
+  Declare a variable and assign it to the await getQuotes function
+  Respond to the request with the variable just declared -> res.json(variable)
+
+Build out the getRecipes function
+  Use await fetch to accces the json database and declare a variable to store the response
+  Declare another variable to access and store the parsed json data we want from the returned database
+  Return 
